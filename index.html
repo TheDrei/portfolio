@@ -12,7 +12,9 @@
   <!-- Favicons -->
   <link href="assets/img/dcwebdev.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css" integrity="sha512-pZlKGs7nEqF4zoG0egeK167l6yovsuL8ap30d07kA5AJUq+WysFlQ02DLXAmN3n0+H3JVz5ni8SJZnrOaYXWBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -21,6 +23,16 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .card {
+        transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+    }
+
+    .card:hover {
+        transform: scale(1.05); /* Slightly increase the size of the card on hover */
+    }
+</style>
 
   <!-- =======================================================
   * Template Name: DevFolio
@@ -107,70 +119,10 @@
                     <div class="col-sm-6 col-md-7">
                       <div class="about-info">
                         <p><span class="title-s">Name: </span> <span>Jan Andrei V. Cambay</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Full-Stack Web Developer</span></p>
+                        <p><span class="title-s"></span> <span>Full-Stack Web Developer</span></p>
                         <p><span class="title-s">Email: </span> <span>dreivilarcambay@gmail.com</span></p>
                         <p><span class="title-s">Phone: </span> <span>+63 966 180 2254</span></p>
                       </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf"  style="height:180px; overflow-y: scroll;">
-                    <h4 class="title-s"><strong>Tech Stack</strong></h4>
-                    <strong>Programming Languages</strong><br/>
-                    <span>PHP</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">95%</div>
-                    </div>
-
-                    <span>Javascript</span><span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-                    </div>
-
-                    <strong>Frameworks</strong><br/>
-                    <span>Laravel</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">95%</div>
-                    </div>
-
-                    <span>Code Igniter</span><span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                    </div>
-
-                    <strong>Frontend</strong><br/>
-                    <span>jQuery, Bootstrap, HTML and CSS</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                    </div>
-
-                    <strong>Backend</strong><br/>
-                    <span>MySQL</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                    </div>
-
-                    <strong>Version Control</strong><br/>
-                    <span>Git</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                    </div>
-
-                    <strong>Project Management Tools</strong><br/>
-                    <span>Jira, Trello</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                    </div>
-
-                    <strong>Content/Learning Management Systems</strong><br/>
-                    <span>WordPress, Joomla, Moodle</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                    </div>
-
-                    <strong>Other Tools</strong><br/>
-                    <span>Google Ads, Google Analytics</span> <span class="pull-right"></span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
                     </div>
                   </div>
                 </div>
@@ -190,14 +142,137 @@
                   </div>
                 </div>
               </div>
-            </div>
+              <div class="skill-mf">
+              
+                <div class="title-box-2">
+                  <h5 class="title-left">
+                    Tech Stack
+                  </h5>
+                </div>
+                 <div class="row">
+                    <!-- Programming Languages -->
+                    <div class="col-sm-6 col-md-4 mb-3">
+                        <div class="card h-100">
+                          <div class="card-header text-white" style="background-color:#0a3361;"><i class="fa fa-code"></i> <b>Programming Languages</b></div>
+                            <div class="card-body" >
+                                <ul class="list-unstyled">
+                                    <li><i class="fab fa-php"></i> PHP</li>
+                                    <li><i class="fab fa-js"></i> JavaScript</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Frameworks -->
+                    <div class="col-sm-6 col-md-4 mb-3">
+                        <div class="card h-100">
+                          <div class="card-header text-white" style="background-color:#0a3361;"><i class="fa fa-cogs"></i><b> Web Application / Javascript Frameworks</b></div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>Laravel</li>
+                                    <li>Code Igniter</li>
+                                    <li>ReactJS</li>
+                                    <li>VueJS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Frontend -->
+                    <div class="col-sm-6 col-md-4 mb-3">
+                        <div class="card h-100">
+                          <div class="card-header text-white" style="background-color:#0a3361;"><i class="fa fa-paint-brush"></i> <b> Frontend</b></div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li><i class="fab fa-js"></i> jQuery, Bootstrap</li>
+                                    <li><i class="fab fa-html5"></i> HTML5</li>
+                                    <li><i class="fab fa-css3-alt"></i> CSS</li>
+                                    <li><i class="fab fa-css3-alt"></i> TailwindCSS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Backend -->
+                    <div class="col-sm-6 col-md-4 mb-3">
+                        <div class="card h-100">
+                          <div class="card-header text-white" style="background-color:#0a3361;"><i class="fa fa-database"></i> Backend</b></div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li> MySQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Version Control -->
+                    <div class="col-sm-6 col-md-4 mb-3">
+                        <div class="card h-100">
+                          <div class="card-header text-white" style="background-color:#0a3361;"><i class="fa-solid fa-code-compare"></i> <b>Version Control</b></div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li> Git</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Project Management Tools -->
+                    <div class="col-sm-6 col-md-4 mb-3">
+                        <div class="card h-100">
+                          <div class="card-header text-white" style="background-color:#0a3361;"><i class="fa fa-tasks"></i>  <b>Project/Task Management Tools</b></div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li><i class="fab fa-jira"></i> Jira</li>
+                                    <li><i class="fab fa-trello"></i> Trello</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- CMS -->
+                    <div class="col-sm-6 col-md-4 mb-3">
+                        <div class="card">
+                          <div class="card-header text-white" style="background-color:#0a3361;"><i class="fa fa-archive"></i> Content/Learning Management Systems</b></div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li><i class="fab fa-wordpress"></i> WordPress</li>
+                                    <li><i class="fab fa-joomla"></i> Joomla</li>
+                                    <li><i class="fab fa-moodle"></i> Moodle</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                      <!-- Frameworks -->
+                      <div class="col-sm-6 col-md-4 mb-3">
+                        <div class="card h-100">
+                          <div class="card-header text-white" style="background-color:#0a3361;"><i class="fa fa-cogs"></i> Other Tools</b></div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                  <li><i class="fab fa-laravel"></i> Postman</li>
+                                    <li><i class="fab fa-laravel"></i> Google Ads</li>
+                                    <li><i class="fab fa-cuttlefish"></i> Google Analytics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+               </div>
+            
           </div>
+          
         </div>
+        
       </div>
+
+      
     </section><!-- End About Section -->
 
+    
+
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
+    <!-- <section id="services" class="services-mf pt-5 route">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -255,15 +330,15 @@
         
         </div>
       </div>
-    </section><!-- End Services Section -->
+    </section>End Services Section -->
 
     <!-- ======= Counter Section ======= -->
     <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/coding-bg.jpg)">
       <div class="overlay-mf"></div>
       <div class="container position-relative">
         <div class="row">
-          <div class="col-sm-4 col-lg-4">
-            <div class="counter-box counter-box pt-4 pt-md-0">
+          <div class="col-sm-6 col-lg-6">
+            <div class="counter-box counter-box pt-2 pt-md-0">
               <div class="counter-ico">
                 <span class="ico-circle"><i class="bi bi-check"></i></span>
               </div>
@@ -273,7 +348,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4 col-lg-4">
+          <div class="col-sm-6 col-lg-6">
             <div class="counter-box pt-4 pt-md-0">
               <div class="counter-ico">
                 <span class="ico-circle"><i class="bi bi-graph-up-arrow"></i></span>
@@ -284,7 +359,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4 col-lg-4">
+          <!-- <div class="col-sm-4 col-lg-4">
             <div class="counter-box pt-4 pt-md-0">
               <div class="counter-ico">
                 <span class="ico-circle"><i class="bi bi-people"></i></span>
@@ -294,7 +369,7 @@
                 <span class="counter-text">TOTAL CLIENTS</span>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="col-sm-3 col-lg-3">
             <div class="counter-box pt-4 pt-md-0">
               <div class="counter-ico">
@@ -471,6 +546,8 @@
               </div>
             </div>
           </div>
+
+          
 
         </div>
       </div>
@@ -704,9 +781,9 @@
                         Ready to bring your envisioned system to life? From concept to reality, I'm here to transform your ideas into functional solutions. Contact me today, and let's discuss your project with my expertise in web development. 
                       </p>
                       <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> Pagsanjan, Laguna, Philippines 4008</li>
+                        <!-- <li><span class="bi bi-geo-alt"></span> Pagsanjan, Laguna, Philippines 4008</li>
                         <li><span class="bi bi-phone"></span> +63 966 180 2254</li>
-                        <li><span class="bi bi-envelope"></span> dreivilarcambay@gmail.com</li>
+                        <li><span class="bi bi-envelope"></span> dreivilarcambay@gmail.com</li> -->
                       </ul>
                     </div>
                     <div class="socials">
@@ -742,7 +819,7 @@
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
             -->
-              Theme from <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            
             </div>
           </div>
         </div>
